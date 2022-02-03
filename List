@@ -1,0 +1,47 @@
+if __name__ == '__main__':
+    n = int(input())
+    empty_list = []
+    for i in range(n):
+        name,*line = input().split()
+        if name == "insert":
+            
+            scores = list(map(int,line))
+            i = scores[0]
+            e = scores[1]
+            empty_list.insert(i,e)
+            
+        elif name == "print":
+            print(empty_list)
+        elif name == "remove":
+            scores = list(map(int,line))
+            i = scores[0]
+            empty_list.remove(i)
+            
+        elif name == "append":
+            scores = list(map(int,line))
+            i = scores[0]
+            empty_list.append(i)
+            
+        elif name == "sort":
+            scores = list(map(int,line))
+            i = scores[0]
+            empty_list.sort(i)
+            
+        elif name == "pop":
+            scores = list(map(int,line))
+            i = scores[0]
+            empty_list.pop(i)
+            
+        elif name == "reverse":
+            scores = list(map(int,line))
+            i = scores[0]
+            empty_list.reverse(i)
+            
+            
+            
+            
+        
+            
+            
+        
+       
